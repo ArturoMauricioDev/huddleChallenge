@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    border:red 1px solid;
+}
 body{
     padding: 0;
     margin: 0;
@@ -11,43 +14,46 @@ body{
     min-height: 100vh;
 }
 header{
-    height: 21vh;
+    height: 23vh;
 }
 header img{
     padding: 3% 0 0 5%;
-    width: 160px;
+    width: 220px;
 }
 main{
     display: flex;
 }
-main div{
+/* main div{
     width: 50%;
-}
+} */
 .image-mockup{
     display: flex;
     justify-content: flex-end;
+    width: 57%;
 }
 main div img{
     width: 90%;
 }
 .column-right{
     margin-left: 5%;
+    width: 43%;
 }
 main .title{
     font-family: 'Poppins', sans-serif;
     color: #fefbff;
-    width: 60%;
-    margin-top: 2.5rem;
+    width: 62%;
+    margin-top: 2.7rem;
 }
 main div p{
     font-family: 'Open Sans', sans-serif;
-    color: #fceefe;
-    width: 71%;
+    color: #c4b3da;
+    width: 78%;
+    margin-top: 6%;
 }
 main div button{
-    height: 3rem;
-    width: 10rem;
-    margin-top: 5px;
+    height: 3.2rem;
+    width: 11.5rem;
+    margin-top: 10px;
     border-radius: 28px;
     background-color: #fffdfe;
     color:#6c5f91;
@@ -64,8 +70,11 @@ main div button:hover{
 footer{
     position: absolute;
     bottom: 0;
-    height: 4.2rem;
+    height: 5.2rem;
     width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 footer ul{
     display: flex;
@@ -83,8 +92,8 @@ footer .facebook-icon{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 0 8px;
     cursor: pointer;
 }
@@ -93,8 +102,8 @@ footer .twitter-icon{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 0 8px;
     cursor: pointer;
 }
@@ -103,9 +112,9 @@ footer .instagram-icon{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
-    padding: 4px 8px 0 8px ;
+    padding: 10px 8px 0 8px ;
     margin-top: 2px;
 }
