@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
+/* *{
     border:red 1px solid;
-}
+} */
 body{
     padding: 0;
     margin: 0;
@@ -23,9 +23,7 @@ header img{
 main{
     display: flex;
 }
-/* main div{
-    width: 50%;
-} */
+
 .image-mockup{
     display: flex;
     justify-content: flex-end;
@@ -40,6 +38,7 @@ main div img{
 }
 main .title{
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     color: #fefbff;
     width: 62%;
     margin-top: 2.7rem;
@@ -118,3 +117,65 @@ footer .instagram-icon{
     padding: 10px 8px 0 8px ;
     margin-top: 2px;
 }
+
+@media screen and (max-width: 600px) {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    body{
+        background-image: url('../images/bg-mobile.svg');
+    }
+    main{
+        flex-wrap: wrap;
+    }
+    header{
+        height: 17.5vh;
+    }
+    header img{
+        padding: 6% 0 0 5%;
+        width: 135px;
+    }
+    .image-mockup{
+        width: 90%;
+    }
+    .column-right{
+        margin: 0 9%;
+        width: 100%;
+        text-align: center;
+    }
+    main .title{
+        font-size: 24px;
+        width: 100%;
+        margin-top: 4rem;
+    }
+    main div p{
+        width: 100%;
+    }
+    main div button{
+        height: 2.4rem;
+        width: 12.5rem;
+        margin-top: 6px;
+    }
+    footer{
+        position: initial;
+        justify-content: center;
+        width: 100%;
+    }
+    footer ul{
+        padding-inline-start: 0;
+        margin-top: 37px;
+    }
+    footer .facebook-icon{
+        width: 33px;
+        height: 33px;
+    }
+    footer .twitter-icon{
+        width: 33px;
+        height: 33px;
+    }
+    footer .instagram-icon{
+        width: 18px;
+        height: 18px;
+        padding: 10px 8px 0 13px;
+    }
+
+}
+    
